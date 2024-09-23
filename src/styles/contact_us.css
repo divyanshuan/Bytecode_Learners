@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+.contactus_whole {
+  height: 80vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.contactus_terminal {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.typing_container {
+  height: 350px;
+  width: 80%;
+  border: 1px solid #bbbbbb;
+  background-color: rgb(30, 30, 30);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.typing_header {
+  border-radius: 10px 10px 0 0;
+  display: grid;
+  grid-template-columns: 15% 70%;
+  background-color: rgb(65, 67, 67);
+  height: 10%;
+}
+.icon_sec_terminal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  gap: 5px;
+}
+.typing_header > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zsh_sec p {
+  font-family: "PT Mono", monospace;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.terminal_ic {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+.terminal_icon1 {
+  background-color: rgb(237, 106, 94);
+}
+.terminal_icon2 {
+  background-color: rgb(245, 191, 79);
+}
+.terminal_icon3 {
+  background-color: rgb(97, 197, 84);
+}
+.the_typing_effect {
+  font-family: "PT Mono", monospace;
+  letter-spacing: 1.5;
+  line-height: 18px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 0 0 20px 20px;
+  color: #fff;
+  font-weight: 900;
+  background-color: rgb(30, 30, 30);
+  height: 90%;
+}
+.Typewriter__wrapper {
+  font-family: "PT Mono", monospace;
+}
+.contactus_image_side {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact_image_icon_side .icon {
+  font-size: 0.6rem;
+}
+.contactus_image_side img {
+  height: 250px;
+}
+.contact_image_icon_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (max-width: 845px) {
+  .contactus_terminal {
+    width: 50%;
+  }
+  .contactus_image_side {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contactus_whole {
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contactus_terminal {
+    width: 100%;
+  }
+  .contactus_image_side {
+    width: 100%;
+  }
+  .contact_image_icon_side .icon {
+    font-size: 0.8rem;
+  }
+}
