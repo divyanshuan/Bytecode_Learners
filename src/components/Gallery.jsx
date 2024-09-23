@@ -5,8 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import "swiper/modules/navigation/navigation.min.css";
-import axios from "../api/axios";
-import serverUrl from "../api/serverurl";
 import { preEvent_images } from "../data/data";
 
 const Gallery = () => {
@@ -23,12 +21,12 @@ const Gallery = () => {
     setImage(getImagesBySlides(preEvent_images));
   };
 
-  const getAllGalleryImages = async () => {
-    const res = await axios.get("/gallery/get");
+  // const getAllGalleryImages = async () => {
+  //   const res = await axios.get("/gallery/get");
 
-    const images = res?.data?.data;
-    setImage(getImagesBySlides(images));
-  };
+  //   const images = res?.data?.data;
+  //   setImage(getImagesBySlides(images));
+  // };
   useEffect(() => {
     // getAllGalleryImages();
     gettingAllGalleryImage();

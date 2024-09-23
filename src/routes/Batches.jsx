@@ -17,10 +17,6 @@ const Batches = () => {
   }, []);
 
   useEffect(() => {
-    // getAllActiveMember(); step 2
-  }, []);
-
-  useEffect(() => {
     const newYearsList = getYearsTillCurrentYear();
     setYearsList(newYearsList);
     if (newYearsList.length > 1) {

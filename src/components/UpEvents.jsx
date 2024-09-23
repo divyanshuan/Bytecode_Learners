@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "../api/axios";
-import serverUrl from "../api/serverurl";
+import React from "react";
 import { upcoming } from "../data/data";
 import { preEvent_images } from "../data/data";
 
@@ -8,32 +6,32 @@ const newPreEvent_images1 = preEvent_images.slice(0, 2);
 const newPreEvent_images2 = preEvent_images.slice(2, 8);
 
 export default function UpEvents() {
-  const [eventDetails, setEventDetails] = useState();
-  const [imageset1, setImageset1] = useState(null);
-  const [imageset2, setImageset2] = useState(null);
-  const getPreviousEventImage = () => {
-    axios
-      .get(`prevevent/get`)
-      .then((res) => {
-        const preveventimage = res?.data?.data;
-        setImageset1(preveventimage.slice(0, 2));
-        setImageset2(preveventimage.slice(2, 6));
-      })
-      .catch((error) => {});
-  };
+  // const [eventDetails, setEventDetails] = useState();
+  // const [imageset1, setImageset1] = useState(null);
+  // const [imageset2, setImageset2] = useState(null);
+  // const getPreviousEventImage = () => {
+  //   axios
+  //     .get(`prevevent/get`)
+  //     .then((res) => {
+  //       const preveventimage = res?.data?.data;
+  //       setImageset1(preveventimage.slice(0, 2));
+  //       setImageset2(preveventimage.slice(2, 6));
+  //     })
+  //     .catch((error) => {});
+  // };
 
-  const getLatestEvent = (id) => {
-    axios
-      .get(`event/getlatest`)
-      .then((res) => {
-        setEventDetails(res?.data?.data);
-      })
-      .catch((error) => {});
-  };
-  useEffect(() => {
-    // getLatestEvent();
-    // getPreviousEventImage();
-  }, []);
+  // const getLatestEvent = (id) => {
+  //   axios
+  //     .get(`event/getlatest`)
+  //     .then((res) => {
+  //       setEventDetails(res?.data?.data);
+  //     })
+  //     .catch((error) => {});
+  // };
+  // useEffect(() => {
+  //   // getLatestEvent();
+  //   // getPreviousEventImage();
+  // }, []);
 
   return (
     <div className="up-events">

@@ -1,5 +1,4 @@
 import React from "react";
-import serverUrl from "../api/serverurl";
 
 export default function Imgcard({ member }) {
   return (
@@ -9,7 +8,7 @@ export default function Imgcard({ member }) {
           src={`${serverUrl}/members/${member.photopath}`}
           alt={member.firstname}
         /> */}
-        <img src={member.image} />
+        <img src={member.image} alt="profile " />
       </div>
       <div className="content-container">
         <p>

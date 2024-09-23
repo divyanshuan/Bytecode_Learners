@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/glimpse-of-gallery.css";
 import { Link } from "react-router-dom";
-import axios from "../api/axios";
-import serverUrl from "../api/serverurl";
 import { preEvent_images } from "../data/data";
 
 const GlimpseOfGallery = () => {
@@ -13,16 +11,16 @@ const GlimpseOfGallery = () => {
     setGlimpsgallery(glimpsdata);
   };
 
-  const getGlimpseOfGalleryImages = async () => {
-    try {
-      const response = await axios.get("gallery/get");
-      const data = response?.data?.data;
-      const glimpsdata = data.slice(0, 6);
-      setGlimpsgallery(glimpsdata);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const getGlimpseOfGalleryImages = async () => {
+  //   try {
+  //     const response = await axios.get("gallery/get");
+  //     const data = response?.data?.data;
+  //     const glimpsdata = data.slice(0, 6);
+  //     setGlimpsgallery(glimpsdata);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
   useEffect(() => {
     gettingGlimpseOfGallery();
     // getGlimpseOfGalleryImages();

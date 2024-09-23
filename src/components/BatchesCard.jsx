@@ -9,8 +9,6 @@ import {
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
-import serverUrl from "../api/serverurl";
-
 const MemberCard = ({ id, email, name, image, social }) => {
   const [isMore, setIsMore] = useState(true);
   const handleReadMore = (ths) => {
