@@ -77,6 +77,7 @@ import image_divyanshu from "../data/members_images/divyanshu.webp";
 // 2022
 import image_payal from "./members_images/payal.webp";
 import image_komal from "./members_images/komal.webp";
+import Image_kshitiz from "./members_images/kshitiz.webp";
 import image_prashansa from "./members_images/prashansa.webp";
 import image_nikita from "./members_images/nikita.webp";
 import image_amar from "./members_images/amar.webp";
@@ -519,6 +520,7 @@ export const batches_with_members = [
   },
 
   //2022
+
   {
     id: 30,
     firstname: "Payal",
@@ -565,6 +567,18 @@ export const batches_with_members = [
     socialmedialinks: {
       linkedin: "https://www.linkedin.com/in/nikita-mittal-6b369625b/",
       github: "https://github.com/mittalnikita",
+    },
+  },
+  {
+    id: 39,
+    firstname: "Kshitiz",
+    lastname: "Sikriwal",
+    image: Image_kshitiz,
+    batch: 2022,
+    email: "kshitizsikriwal16@gmail.com",
+    socialmedialinks: {
+      linkedin: "https://www.linkedin.com/in/kshitizsikriwal/",
+      github: "https://github.com/kshitizsikriwal/",
     },
   },
   {
@@ -667,6 +681,18 @@ export const members_details = [
     socialmedialinks: {
       linkedin: "https://www.linkedin.com/in/prashansa-soni-a298b7275/",
       github: "https://github.com/PrashansaSoni",
+    },
+  },
+  {
+    id: 39,
+    firstname: "Kshitiz",
+    lastname: "Sikriwal",
+    image: Image_kshitiz,
+    batch: 2022,
+    email: "kshitizsikriwal16@gmail.com",
+    socialmedialinks: {
+      linkedin: "https://www.linkedin.com/in/kshitizsikriwal/",
+      github: "https://github.com/kshitizsikriwal/",
     },
   },
   {
